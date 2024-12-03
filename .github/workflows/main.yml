@@ -1,0 +1,15 @@
+name: Workflow para BE-Shipping
+
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  redirect_to_principal:
+    name: Redirect to Principal Pipeline
+    uses: ObligatorioArbeloRodriguez/Principal/.github/workflows/main.yml@main
+    with:
+      app_name: BE-Products
+      sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
