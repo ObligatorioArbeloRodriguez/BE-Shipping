@@ -1,5 +1,4 @@
-name: Workflow para BE-Shipping
-
+name: Workflow "dummy" para BE-Shipping
 
 on:
   push:
@@ -7,9 +6,10 @@ on:
       - main
 
 jobs:
-  redirect_to_principal:
-    name: Redirect to Principal Pipeline
-    uses: ObligatorioArbeloRodriguez/Principal/.github/workflows/main.yml@main
-    with:
-      app_name: BE-Products
-      sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
+    ir_a_buscar_yml_a_principal:
+        name: Ir a buscar el yml de repo Principal
+        uses: ObligatorioArbeloRodriguez/Principal/.github/workflows/main.yml@main
+        with:
+            app_name: BE-Shipping
+            sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
+            docker_image_name: imagen_BE-Shipping
