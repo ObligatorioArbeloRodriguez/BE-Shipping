@@ -13,3 +13,4 @@ jobs:
             app_name: BE-Shipping
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
             docker_image_name: imagen_BE-Shipping
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
