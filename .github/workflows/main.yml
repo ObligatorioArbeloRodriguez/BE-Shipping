@@ -10,9 +10,9 @@ jobs:
         name: Ir a buscar el yml de repo Principal
         uses: ObligatorioArbeloRodriguez/Principal/.github/workflows/main.yml@main
         with:
-            app_name: BE-Shipping
+            app_name: be-shipping
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
             docker_image_name: imagen_be-shipping
-            nombre_repo: BE-Shipping
+            nombre_repo_ecr: shipping-repo
         secrets:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
