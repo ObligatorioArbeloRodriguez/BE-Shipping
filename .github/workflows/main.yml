@@ -18,3 +18,4 @@ jobs:
             KEY-ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
             ACCESS-KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
+            ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
