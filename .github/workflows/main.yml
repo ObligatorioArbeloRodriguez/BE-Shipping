@@ -14,4 +14,4 @@ jobs:
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
             nombre_repo_ecr: shipping-repo
         secrets:
-            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            inherit
