@@ -14,11 +14,5 @@ jobs:
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
             nombre_repo_ecr: shipping-repo
         secrets:
-            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-            KEY-ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-            ACCESS-KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-            TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
-            ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
-            CLUSTER_DEV: ${{ secrets.CLUSTER_DEV }}
-            CLUSTER_TEST: ${{ secrets.CLUSTER_TEST }}
-            CLUSTER_PROD: ${{ secrets.CLUSTER_PROD }}
+            inherit
+
