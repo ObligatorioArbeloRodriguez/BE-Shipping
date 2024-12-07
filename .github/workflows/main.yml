@@ -13,6 +13,5 @@ jobs:
             app_name: be-shipping
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Shipping
             nombre_repo_ecr: shipping-repo
-        secrets:
-            inherit
+        secrets: inherit
 
